@@ -1,0 +1,18 @@
+Luciano,
+You will need to add the following code to your .htaccess file. You can also change it in your php.ini file.
+php_value upload_max_filesize 20M php_value post_max_size 20M php_value max_execution_time 200 php_value max_input_time 200
+I set mine to 20mb
+
+
+modify upload.php at line 15,
+change: move_uploaded_file($_FILES['upl']['tmp_name'], 'uploads/'.$_FILES['upl']['name'])
+to: move_uploaded_file($_FILES['upl']['tmp_name'], 'uploads/'.$YOURnEWnAMEhERE)
+or something like this!! check: http://php.net/manual/fr/function.move-uploaded-file.php for more information about the function.
+really easy fix ;)
+
+
+For example:
+// Automatically upload the file once it is added to the queue $('#submit-test').click(function(){ data.submit(); });
+you must change too: if(tpl.hasClass('working')){ data.submit().abort(); }
+And add to your template <span id="submit-test">Wyslij pliki</span>
+Sorry for my bad English

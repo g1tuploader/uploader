@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8"/>
+		<title>file Upload</title>
+<link rel="icon" href="favicon.ico" />
+<script src="tinycon.js"></script>
+		<!-- Google web fonts -->
+		<link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel='stylesheet' />
+
+		<!-- The main CSS file -->
+		<link href="assets/css/style.css" rel="stylesheet" />
+		
+		<link rel="stylesheet" type="text/css" href="css/tabs.css" />
+		<link rel="stylesheet" type="text/css" href="css/tabstyles.css" />
+  		<script src="js/modernizr.custom.js"></script>
+		  <script src="pace.min.js"></script>
+  <link href="dataurl.css" rel="stylesheet" />
+
+	</head><body><script data-pace-options='{ "ajax": false }' src='pace.min.js'></script>
+	<div class="tabs tabs-style-bar">
+					<nav>
+						<ul>
+							
+							<li class="tab-current"><a href="index.html" class="icon icon-upload"><span>Upload</span></a></li>
+							<li class="tab-current"><a href="downloads/" class="icon icon-box"><span>Archive</span></a></li>
+							<li class="tab-current"><a href="feedback/feedback.html" target="_blank" class="icon icon-tools"><span>Settings</span></a></li>
+						</ul>
+					</nav>
+				<!-- /content -->
+				</div><!-- /tabs -->
+			
+</div><!-- /container -->
+		<script src="js/cbpFWTabs.js"></script>
+		<script>
+			(function() {
+
+				[].slice.call( document.querySelectorAll( '.tabs' ) ).forEach( function( el ) {
+					new CBPFWTabs( el );
+				});
+
+			})();
+		</script>
+	<script >
+// Simple as this:
+
+Tinycon.setBubble(20);
+	</script>
+	
+<div  id="gio">
+
+	</div>
+		<form id="upload" method="post" action="upload.php" enctype="multipart/form-data">
+		
+			<img src="Gio-robot.png" height="210" width="210"><p style="color:red;">Select multiple files in the file browser dialog then upload them at once!</p><div id="drop">
+				Drop Here <br>   <h3>OR</h3> <br>
+
+				<a>Browse</a>
+				<input type="file" name="upl" multiple />
+			</div>
+
+			<ul>
+				<!-- The file uploads will be shown here -->
+			</ul>
+		</form>
+		<br><br>
+		<footer>
+     <p class="tt"><img src="footer.png" height="50" width="50" />  <span style="color:red;">Allowed file types: </span><span style="color:red">'png', 'jpg', 'gif','zip', 'rar', 'mp4', 'mp3', 'avi', 'txt', 'torrent', 'pdf', 'psd', 'exe', 'docx', 'pptx', 'xls', 'css', 'html', 'htm', 'js', 'woff', 'ttf', 'svg', 'eot'</p></span>
+        </footer>
+        
+		<!-- JavaScript Includes -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="assets/js/jquery.knob.js"></script>
+
+		<!-- jQuery File Upload Dependencies -->
+		<script src="assets/js/jquery.ui.widget.js"></script>
+		<script src="assets/js/jquery.iframe-transport.js"></script>
+		<script src="assets/js/jquery.fileupload.js"></script>
+		
+		<!-- Our main JS file -->
+		<script src="assets/js/script.js"></script>
+
+	<style>
+	h2 {
+		margin-left: 50px;
+	}
+	.t{
+		margin-left: 50px;
+		
+	}
+	.tt{
+		margin-left: 20px;
+		
+	}
+	.t1{
+		text-decoration: none;
+
+margin-left: 50px;
+	}
+	.t1:hover {
+		text-decoration: ;
+		margin-left: 50px;
+	}
+	a{
+		text-decoration: none;
+	}
+	a:hover {
+		text-decoration: ;
+	}
+	</style>
+
+<script type="text/javascript">
+var exitPop=false;
+
+	
+
+setInterval(function(){window.onbeforeunload=function(){if((!exitPop)){exitPop=false;return"if u uploading file click cancle / if u want download file or see password click info"}}});
+		
+
+</script>
+	
+		<link rel="stylesheet" href="csss/forkit.css">
+
+
+
+
+
+		<!-- The ribbon -->
+		<a class="forkit" data-text="Info" data-text-detached="Click >" href="Javascript:" onClick="open_win('https://github.com/giorga8');"><img style="position: absolute; top: 0; right: 0; border: 0;" src="/csss/click.png" alt="Fork me on GitHub"></a>
+
+		<script src="js/forkit.js"></script>
+<script> 
+function open_win(f) 
+{ 
+amit = window.open(f,'amit','statusbar=no,width=1477,height=899'); 
+amit.focus(); 
+} 
+</script>
+	</body>
+</html>
